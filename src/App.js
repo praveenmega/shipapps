@@ -145,7 +145,7 @@ function App() {
             </p>
             <div className="mt-12">
               <div className="grid grid-cols-1 gap-8">
-                <div className="rounded-lg px-6 py-8 bg-gray-200">
+                <div className="rounded-lg mt-12 px-6 py-8 bg-gray-200">
                   <div className="-mt-14">
                     <span
                       className="inline-flex p-3 bg-gradient-to-t 
@@ -171,7 +171,7 @@ function App() {
                     aliqua.
                   </p>
                 </div>
-                <div className="rounded-lg px-6 py-8 bg-gray-200">
+                <div className="rounded-lg mt-12 px-6 py-8 bg-gray-200">
                   <div className="-mt-14">
                     <span
                       className="inline-flex p-3 bg-gradient-to-t 
@@ -202,7 +202,7 @@ function App() {
                     aliqua.
                   </p>
                 </div>
-                <div className="rounded-lg px-6 py-8 bg-gray-200">
+                <div className="rounded-lg mt-12 px-6 py-8 bg-gray-200">
                   <div className="-mt-14">
                     <span
                       className="inline-flex p-3 bg-gradient-to-t 
