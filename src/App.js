@@ -25,11 +25,11 @@ function App() {
     <div>
       <Toolbar openedSide={showSideDrawerHandler} />
       <Sidedrawer opened={showsidedrawer} closed={closeSideDrawerHandler} />
-      <main className="bg-gray-800">
+      <main className="bg-gray-800 lg:pb-10">
         <div className="pt-10 mx-auto max-w-7xl">
-          <div className="lg:grid lg:grid-cols-12 lg:gap-8">
+          <div className="lg:grid lg:grid-cols-2 lg:gap-8">
             <div
-              className="px-4 sm:px-6 sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left 
+              className="px-4 sm:px-6 sm:text-center md:max-w-2xl md:mx-auto lg:text-left 
             lg:flex lg:items-center"
             >
               <div>
@@ -108,8 +108,12 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="mt-12 -mb-0">
-              <img className="w-full opacity-20" src={bg1} alt="bg image" />
+            <div className="mt-12 -mb-0 lg:mt-0">
+              <img
+                className="w-full opacity-10 border-opacity-5 lg:h-full"
+                src={bg1}
+                alt="bg image"
+              />
             </div>
           </div>
         </div>
@@ -156,7 +160,7 @@ function App() {
             aliquip.
           </p>
           <div className="mt-12 bg-white">
-            <div className="grid grid-cols-1 gap-8">
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
               <div className="rounded-lg mt-12 px-6 py-8 bg-gray-200">
                 <div className="-mt-14">
                   <span
@@ -293,22 +297,24 @@ function App() {
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          {posts.map((post) => {
-            return (
-              <Blogpost
-                key={post.title}
-                title={post.title}
-                category={post.category}
-                description={post.description}
-                src={post.src}
-                alt={post.alt}
-                author={post.author}
-                img={post.img}
-                date={post.date}
-                length={post.length}
-              />
-            );
-          })}
+          <div className="mt-12 max-w-lg mx-auto grid gap-6 lg:grid-cols-3 lg:max-w-none">
+            {posts.map((post) => {
+              return (
+                <Blogpost
+                  key={post.title}
+                  title={post.title}
+                  category={post.category}
+                  description={post.description}
+                  src={post.src}
+                  alt={post.alt}
+                  author={post.author}
+                  img={post.img}
+                  date={post.date}
+                  length={post.length}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
 
@@ -367,7 +373,7 @@ function App() {
       <footer className="bg-gray-50">
         <h2 className="sr-only">Footer</h2>
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:py-6 md:px-8">
-          <div className="md:grid md:grid-cols-3 md:gap-8 md:items-center">
+          <div className="md:grid md:grid-cols-3 items-center">
             <div className="space-y-8 md:col-span-1">
               <img className="h-10" src={logobw} alt="logo" />
               <p className="text-gray-500 text-base">
