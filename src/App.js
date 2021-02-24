@@ -3,10 +3,12 @@ import Sidedrawer from "./Sidedrawer";
 import Toolbar from "./Toolbar";
 import Blogpost from "./Blogpost";
 import posts from "./posts";
+import footerdata from "./footerdata";
 import bg1 from "./assets/bg1.jpg";
 import ss from "./assets/ss.png";
 import phone from "./assets/phone.jpg";
 import photo from "./assets/photo.jpg";
+import logobw from "./assets/logobw.png";
 
 function App() {
   const [showsidedrawer, setShowSideDrawer] = useState(false);
@@ -360,6 +362,107 @@ function App() {
           </div>
         </div>
       </div>
+
+      {/* footer section */}
+      <footer className="bg-gray-50">
+        <h2 className="sr-only">Footer</h2>
+        <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:py-6 md:px-8">
+          <div className="md:grid md:grid-cols-3 md:gap-8 md:items-center">
+            <div className="space-y-8 md:col-span-1">
+              <img className="h-10" src={logobw} alt="logo" />
+              <p className="text-gray-500 text-base">
+                Making the world a better place through constructing hierarchies
+              </p>
+            </div>
+            <div className="mt-12 md:mt-0 md:col-span-2">
+              <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4">
+                <div>
+                  <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                    Solutions
+                  </h3>
+                  <ul className="mt-4 space-y-4 list-none">
+                    {footerdata.map((data) => {
+                      return (
+                        <li>
+                          <a
+                            href="#"
+                            className="text-base text-gray-500 hover:text-gray-900"
+                          >
+                            {data}
+                          </a>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                    Support
+                  </h3>
+                  <ul className="mt-4 space-y-4 list-none">
+                    {footerdata.map((data) => {
+                      return (
+                        <li>
+                          <a
+                            href="#"
+                            className="text-base text-gray-500 hover:text-gray-900"
+                          >
+                            {data}
+                          </a>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="mt-5 sm:mt-0 text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                    Company
+                  </h3>
+                  <ul className="mt-4 space-y-4 list-none">
+                    {footerdata.map((data) => {
+                      return (
+                        <li>
+                          <a
+                            href="#"
+                            className="text-base text-gray-500 hover:text-gray-900"
+                          >
+                            {data}
+                          </a>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="mt-5 sm:mt-0 text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                    Legal
+                  </h3>
+                  <ul className="mt-4 space-y-4 list-none">
+                    {footerdata.map((data) => {
+                      return (
+                        <li>
+                          <a
+                            href="#"
+                            className="text-base text-gray-500 hover:text-gray-900"
+                          >
+                            {data}
+                          </a>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="mt-12 text-center border-t border-gray-200 pt-8">
+            <p className="text-base text-gray-400 xl:text-center">
+              &copy; {new Date().getFullYear()} Workflow, Inc, All rights
+              reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
