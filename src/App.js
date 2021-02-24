@@ -246,7 +246,7 @@ function App() {
       </div>
 
       {/* feature with image */}
-      <div className="mt-20 pb-16">
+      <div className="mt-20">
         <div>
           <div className="px-4">
             <div className="aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden">
@@ -258,7 +258,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div class="-mt-28 pt-36 bg-gradient-to-r from-pink-400 to-red-500">
+        <div class="-mt-28 pt-36 pb-20 bg-gradient-to-r from-pink-400 to-red-500">
           <blockquote>
             <div>
               <p className="text-left text-2xl px-2 font-medium text-white">
@@ -311,16 +311,55 @@ function App() {
       </div>
 
       {/* cta section */}
-      {/*  <div className="relative bg-gray-800">
-        <div className="relative h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
+      <div className="relative bg-gray-800">
+        <div className="relative h-56 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
           <img
             className="w-full h-full object-cover"
             src={photo}
             alt="laptop"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-pink-400 to-red-500"></div>
         </div>
-      </div> */}
+        <div className="relative max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+          <div className="md:ml-auto md:w-1/2 md:pl-10">
+            <h2 className="text-base font-semibold uppercase tracking-wider text-gray-300">
+              Award winning support
+            </h2>
+            <p className="mt-2 text-white text-3xl font-extrabold tracking-tight sm:text-4xl">
+              We're here to help
+            </p>
+            <p className="mt-3 text-lg text-gray-300">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip.
+            </p>
+            <div className="mt-8">
+              <div className="inline-flex items-center rounded-md shadow bg-white">
+                <a
+                  href="#"
+                  className="px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 hover:bg-gray-50"
+                >
+                  Visit the help center
+                </a>
+                <svg
+                  className="-ml-3 mr-4 h-5 w-5 text-gray-400 justify-center"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

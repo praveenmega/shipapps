@@ -24,7 +24,7 @@ function Toolbar(props) {
           <div className=" sm:text-white sm:text-base sm:flex-1 sm:text-center lg:hidden">
             <a href="#">Login</a>
           </div>
-          <div className=" sm:text-white sm:text-base sm:flex-1 sm:p-1 sm:bg-gray-700 sm:rounded-lg lg:hidden">
+          <div className=" sm:text-white sm:text-base sm:flex-1 sm:p-1 sm:text-center sm:bg-gray-700 sm:rounded-lg lg:hidden">
             <a href="#">Start free trial</a>
           </div>
         </div>
